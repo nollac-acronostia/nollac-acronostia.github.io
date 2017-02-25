@@ -1,0 +1,260 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main {
+  background: url(../img/background-p3.jpg); }
+
+.head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo {
+  width: 150px;
+  height: 30px;
+  background: url(../img/logo.png);
+  margin-top: 45px; }
+
+.nav_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  max-width: 540px;
+  width: 100%; }
+
+.nav_menu_link {
+  color: white;
+  font-family: Lato Regular, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  text-decoration: none;
+  padding: 40px 25px 15px 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+/* active page */
+.page_home.active {
+  background-color: #74c7d5;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_services.active {
+  background-color: #df5c64;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_about.active {
+  background-color: #91778e;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_work.active {
+  background-color: #a1ca6c;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_contacts.active {
+  background-color: #82c8bd;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+/* end active page */
+.about_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+
+.about_content_title {
+  color: white;
+  font-family: Lato, sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+.about_content_text {
+  color: #e6d1e3;
+  font-family: Lato Regular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 55px; }
+
+.meet {
+  position: relative;
+  color: white;
+  font-family: Lato Black, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+  background: #a1ca6c;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 0 40px;
+  margin-bottom: 70px; }
+  .meet:after {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: -webkit-calc(50% - 15px);
+    left: calc(50% - 15px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #a1ca6c transparent transparent transparent; }
+
+.about_team {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about_user {
+  background: rgba(77, 63, 75, 0.5);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  max-width: 260px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 115px; }
+  .about_user:hover {
+    background: rgba(77, 63, 75, 0.8); }
+
+.about_user_pic {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #fff url(../img/user.png) no-repeat top center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: 50px;
+  margin-bottom: 16px; }
+  .about_user_pic:after {
+    position: absolute;
+    content: "";
+    width: 152px;
+    height: 152px;
+    top: -6px;
+    left: -6px;
+    border: 5px solid #947a92;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
+.about_user_title {
+  color: #c7b6c5;
+  font-family: Lato Black, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin: 0; }
+
+.about_user_text {
+  color: #a1ca6c;
+  font-family: Lato Regular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 25px; }
+
+.about_user_social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0;
+  margin-bottom: 30px; }
+  .about_user_social li {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #a1859e; }
+
+.user_social_link {
+  display: inline-block;
+  width: 30px;
+  height: 30px; }
+  .user_social_link.fb {
+    background: url(../img/facebook.png) no-repeat center center; }
+  .user_social_link.tw {
+    background: url(../img/twit.png) no-repeat center center; }
+  .user_social_link.google {
+    background: url(../img/g+.png) no-repeat center center; }
+  .user_social_link.in {
+    background: url(../img/lin.png) no-repeat center center; }
+
+.about_user:hover .about_user_pic {
+  background: #fff url(../img/user-hover.png) no-repeat top center; }
+
+.about_user:hover .about_user_title {
+  color: #fff; }
+
+.about_user:hover .user_social_fb {
+  background: #4f689e; }
+
+.about_user:hover .user_social_tw {
+  background: #74c7d5; }
+
+.about_user:hover .user_social_google {
+  background: #df5c64; }
+
+.about_user:hover .user_social_in {
+  background: #3e61af; }
