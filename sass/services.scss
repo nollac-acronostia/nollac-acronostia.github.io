@@ -116,6 +116,7 @@ body {
 .services_offer {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .services_item {

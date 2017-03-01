@@ -129,6 +129,7 @@ body {
 .about_team {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .about_user {
