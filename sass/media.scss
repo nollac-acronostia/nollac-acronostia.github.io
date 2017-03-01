@@ -23,8 +23,11 @@
 	}
 }
 
-@media only screen and (max-width:1140px) { 
-	
+@media only screen and (max-width:1130px) {
+	.about_team,
+	.services_offer {
+		justify-content: space-around;
+	}
 }
 
 @media only screen and (max-width:1050px) { 
@@ -41,14 +44,35 @@
 	}
 }
 
+@media only screen and (max-width:1025px) {
+	.contacts_info {
+		justify-content: space-around;
+	}
+}
+
 @media only screen and (max-width:961px) { 
 	.slider_item_two .slider_text_big {
 		font-size: 100px;
 	}
+	.portfolio_list {
+		justify-content: space-around;
+	}
 }
 
-@media only screen and (max-width:641px) { 
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media only screen and (max-width:860px) { 
+	.services_offer {
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width:754px) { 
+	.head {
+		justify-content: center;
+	}
+
+	.nav_menu_link {
+		padding-top: 15px;
+	}
 }
 
 @media only screen and (max-width:481px) {

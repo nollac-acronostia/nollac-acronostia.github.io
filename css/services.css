@@ -19,13 +19,17 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.logo_block {
+  margin-top: 45px; }
 
 .logo {
-  width: 150px;
-  height: 30px;
-  background: url(../img/logo.png);
-  margin-top: 45px; }
+  padding: 15px 80px;
+  background: url(../img/logo.png) no-repeat; }
 
 .nav_menu {
   display: -webkit-box;
