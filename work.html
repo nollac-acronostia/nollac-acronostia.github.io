@@ -77,7 +77,10 @@
 		</div> <!-- main -->
 	</div> <!-- wrapper -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="js/slick/slick.min.js" defer></script>
-	<script src="js/common.js" defer></script>
+	<script>
+		$('.filter_link').on('click', function() {
+		$(this).addClass('active');
+		$('.filter_link').not(this).removeClass('active')});
+	</script>
 </body>
 </html>
