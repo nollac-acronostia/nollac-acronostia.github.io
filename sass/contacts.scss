@@ -208,6 +208,11 @@ body {
 	margin-bottom: 80px;
 }
 
+.user_form_name {
+	display: flex;
+	flex-direction: row;
+}
+
 .user_form_item input {
 	background-color: #68a097;
 	border-radius: 4px;

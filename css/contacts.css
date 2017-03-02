@@ -243,6 +243,17 @@ body {
           align-items: center;
   margin-bottom: 80px; }
 
+.user_form_name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 .user_form_item input {
   background-color: #68a097;
   -webkit-border-radius: 4px;

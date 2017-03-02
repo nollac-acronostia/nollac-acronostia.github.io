@@ -126,7 +126,10 @@ body {
           justify-content: space-between;
   border-top: 1px solid #94b963;
   border-bottom: 1px solid #94b963;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .filter_title {
   color: #fff;
@@ -144,6 +147,9 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   max-width: 445px;
   width: 100%;
   list-style: none;

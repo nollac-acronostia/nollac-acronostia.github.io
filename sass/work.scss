@@ -109,6 +109,7 @@ body {
 	border-top: 1px solid #94b963;
 	border-bottom: 1px solid #94b963;
 	margin-bottom: 50px;
+	flex-wrap: wrap;
 }
 
 .filter_title {
@@ -122,6 +123,7 @@ body {
 .filter_items {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	max-width: 445px;
 	width: 100%;
 	list-style: none;
