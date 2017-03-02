@@ -216,6 +216,9 @@
 	.social_link.lin {
 		background-position: 7px 4px;
 	}
+	.social {
+		padding: 0;
+	}
 }
 @media only screen and (max-width:375px) { 
 	.slider_item {
@@ -239,5 +242,8 @@
 	}
 	.slider_item_two .slider_text_big {
 		font-size: 35px;
+	}
+	.user_ask {
+		width: 290px;
 	}
 }
