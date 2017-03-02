@@ -173,6 +173,15 @@
 	.user_form_name {
 		flex-direction: column;
 	}
+	.user_form_item .name {
+		margin-right: 0;
+	}
+	.user_ask {
+		width: 400px;
+	}
+	.social_list {
+		margin-right: 5%;
+	}
 }
 
 @media only screen and (max-width:425px) { 
@@ -187,6 +196,25 @@
 	.slider_item_two .slider_text_big {
 		font-size: 40px;
 		margin-left: 20px;
+	}
+	.user_ask {
+		width: 320px;
+	}
+	.social_list {
+		width: 40px;
+		height: 40px;
+	}
+	.social_link {
+		padding: 20px 20px;
+	}
+	.social_link.tw {
+		background-position: 7px 9px;
+	}
+	.social_link.go {
+		background-position: 8px 6px;
+	}
+	.social_link.lin {
+		background-position: 7px 4px;
 	}
 }
 @media only screen and (max-width:375px) { 
