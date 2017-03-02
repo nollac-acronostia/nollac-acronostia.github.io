@@ -1,6 +1,6 @@
 $('.content_home').slick({
 	dots: true,
-	// autoplay: true,
+	autoplay: true,
 	responsive: [
 		{
 			breakpoint: 961,
