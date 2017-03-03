@@ -157,7 +157,8 @@ body {
   right: -4%; }
 
 .slick-dots {
-  bottom: 90px; }
+  bottom: 90px;
+  left: 0; }
 
 .slick-dots li button:before {
   content: "";
