@@ -5,12 +5,425 @@
 	<title>Acronostia - Contacts</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/contacts.css">
-	<link rel="stylesheet" href="css/media.css">
+	
 </head>
 <body>
+<style>
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.main {
+  background: url(../img/background-p5.jpg); }
+
+.head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.logo_block {
+  margin-top: 45px; }
+
+.logo {
+  padding: 15px 80px;
+  background: url(../img/logo.png) no-repeat; }
+
+.nav_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  max-width: 540px;
+  width: 100%; }
+
+.nav_menu_link {
+  color: white;
+  font-family: Lato Regular, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 60px;
+  text-decoration: none;
+  padding: 40px 25px 15px 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+  .nav_menu_link:hover {
+    background: #82c8bd; }
+
+/* active page */
+.page_home.active {
+  background-color: #74c7d5;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_services.active {
+  background-color: #df5c64;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_about.active {
+  background-color: #91778e;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_work.active {
+  background-color: #a1ca6c;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.page_contacts.active {
+  background-color: #82c8bd;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+/* end active page */
+.content_contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 120px; }
+
+.contacts_content_title {
+  display: block;
+  color: #fff;
+  font-family: Lato Light, sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 58px;
+  text-transform: uppercase; }
+
+.contacts_content_text {
+  color: #fff;
+  font-family: Lato Regular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.contacts_info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.addres_title {
+  color: white;
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.address_info {
+  margin-bottom: 70px; }
+  .address_info p {
+    margin: 0;
+    margin-bottom: 4px; }
+
+.address_info .address_info_title {
+  color: #c0dfda;
+  font-family: Lato Bold, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-bottom: 15px; }
+
+.address_city,
+.address_street {
+  color: #fff;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.address_contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px; }
+
+.address_contacts p {
+  display: inline-block;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #d0efea;
+  margin: 0;
+  margin-bottom: 5px; }
+
+.address_contacts a {
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none; }
+
+.address_contacts .mail_address {
+  text-decoration: underline; }
+
+.address_block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.map {
+  position: relative;
+  width: 260px;
+  height: 220px;
+  margin: 0 10px;
+  margin-top: 115px;
+  overflow: hidden; }
+
+.map_pic {
+  position: relative;
+  top: -130px;
+  left: -50px; }
+
+.user_form_title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px; }
+
+.user_form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px; }
+
+.user_form_name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.user_form_item input {
+  background-color: #68a097;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  outline: none;
+  margin-bottom: 20px; }
+  .user_form_item input:focus {
+    background: #fff; }
+
+.user_form_item .name {
+  margin-right: 20px; }
+
+.user_form_item input::-webkit-input-placeholder {
+  color: #82c8bd;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.user_form_item input::-moz-placeholder {
+  color: #82c8bd;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.user_form_item input:-moz-placeholder {
+  color: #82c8bd;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.user_form_item input:-ms-input-placeholder {
+  color: #82c8bd;
+  font-family: Lato Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px; }
+
+.user_form_item input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.user_form_item input:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.user_form_item input:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.user_form_item input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.user_ask {
+  display: block;
+  background-color: #68a097;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: 30px; }
+  .user_ask:focus {
+    background: #fff; }
+
+.form_btn {
+  color: #fff;
+  font-family: Lato Black,  sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 21px;
+  padding: 12px 95px;
+  background-color: #df5c64;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 -4px 0 rgba(178, 74, 80, 0.5);
+          box-shadow: inset 0 -4px 0 rgba(178, 74, 80, 0.5); }
+
+.footer {
+  background: #68a097; }
+
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0; }
+
+.social_list {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #82c7bc;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: 40px 0;
+  margin-right: 40px; }
+  .social_list:last-child {
+    margin-right: 0; }
+
+.social_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px 30px; }
+
+.facebook:hover {
+  background: #4f689e; }
+
+.twitter:hover {
+  background: #74c7d5; }
+
+.google:hover {
+  background: #DF5C64; }
+
+.linkedin:hover {
+  background: #3E61AF; }
+
+.social_link.fb {
+  background: url(../img/footer-fb.png) no-repeat;
+  background-position: center center; }
+
+.social_link.tw {
+  background: url(../img/footer-twit.png) no-repeat;
+  background-position: 17px 19px; }
+
+.social_link.go {
+  background: url(../img/footer-g+.png) no-repeat;
+  background-position: 18px 16px; }
+
+.social_link.lin {
+  background: url(../img/footer-lin.png) no-repeat;
+  background-position: 17px 12px; }
+
+</style>
 	<div class="wrapper">
 		<div class="main">
 				<div class="container">
@@ -71,5 +484,9 @@
 				</footer>
 		</div> <!-- main -->
 	</div> <!-- wrapper -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/contacts.css"> -->
+	<link rel="stylesheet" href="css/media.css">
 </body>
 </html>
