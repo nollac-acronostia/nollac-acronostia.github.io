@@ -48,6 +48,9 @@ body {
 	text-decoration: none;
 	padding: 40px 25px 15px 25px;
 	border-radius: 5px;
+	&:hover {
+		background: #74c7d5;
+	}
 }
 
 /* active page */

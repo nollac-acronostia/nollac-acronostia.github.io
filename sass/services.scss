@@ -47,6 +47,9 @@ body {
 	text-decoration: none;
 	padding: 40px 25px 15px 25px;
 	border-radius: 5px;
+	&:hover {
+		background: #df5c64;
+	}
 }
 
 /* active page */
