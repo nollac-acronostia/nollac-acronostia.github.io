@@ -189,26 +189,14 @@ body {
   position: relative;
   width: 260px;
   height: 200px;
-  cursor: pointer; }
-  .portfolio_pic.road {
-    background: url(../img/content/road.jpg);
-    background-position: -40px 0; }
-  .portfolio_pic.lights {
-    background: url(../img/content/light.jpg); }
-  .portfolio_pic.cactus {
-    background: url(../img/content/cactus.jpg);
-    background-position: 0 -140px; }
-  .portfolio_pic.river {
-    background: url(../img/content/river.jpg);
-    background-position: -35px 0; }
-  .portfolio_pic.creek {
-    background: url(../img/content/creek.jpg); }
-  .portfolio_pic.mountains {
-    background: url(../img/content/mountains.jpg); }
-  .portfolio_pic.tree {
-    background: url(../img/content/tree.jpg); }
-  .portfolio_pic.flower {
-    background: url(../img/content/flower.jpg); }
+  cursor: pointer;
+  overflow: hidden; }
+  .portfolio_pic .road {
+    position: relative;
+    left: -40px; }
+  .portfolio_pic .cactus {
+    position: relative;
+    top: -60px; }
 
 .portfolio_pic:hover:before {
   position: absolute;
@@ -216,7 +204,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgba(61, 77, 41, 0.7); }
+  background: rgba(61, 77, 41, 0.7);
+  z-index: 10; }
 
 .portfolio_pic:hover:after {
   content: "+";
@@ -257,4 +246,5 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 17.5px 18px 17.5px;
-    border-color: transparent transparent #eeeeee transparent; }
+    border-color: transparent transparent #eeeeee transparent;
+    z-index: 20; }

@@ -188,7 +188,8 @@ body {
           border-radius: 50%;
   border: 1px solid #fff;
   margin-top: 50px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  overflow: hidden; }
   .about_user_pic:after {
     position: absolute;
     content: "";

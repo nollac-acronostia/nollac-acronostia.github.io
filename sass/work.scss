@@ -160,32 +160,14 @@ body {
 	width: 260px;
 	height: 200px;
 	cursor: pointer;
-	&.road {
-		background: url(../img/content/road.jpg);
-		background-position: -40px 0;
+	overflow: hidden;
+	& .road {
+		position: relative;
+		left:-40px;
 	}
-	&.lights {
-		background: url(../img/content/light.jpg);
-	}
-	&.cactus {
-		background: url(../img/content/cactus.jpg);
-		background-position: 0 -140px
-	}
-	&.river {
-		background: url(../img/content/river.jpg);
-		background-position: -35px 0;
-	}
-	&.creek {
-		background: url(../img/content/creek.jpg);
-	}
-	&.mountains {
-		background: url(../img/content/mountains.jpg);
-	}
-	&.tree {
-		background: url(../img/content/tree.jpg);
-	}
-	&.flower {
-		background: url(../img/content/flower.jpg);
+	& .cactus {
+		position: relative;
+		top:-60px;
 	}
 }
 
@@ -196,6 +178,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: rgba(61, 77, 41, .7);
+	z-index:10;
 }
 
 .portfolio_pic:hover:after {
@@ -238,5 +221,6 @@ body {
 		border-style: solid;
 		border-width: 0 17.5px 18px 17.5px;
 		border-color: transparent transparent #eeeeee transparent;
+		z-index:20;
 	}
 }

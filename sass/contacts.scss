@@ -185,12 +185,18 @@ body {
 }
 
 .map {
+	position: relative;
 	width: 260px;
 	height: 220px;
-	background: url(../img/content/map.jpg);
-	background-position: -50px -120px;
 	margin: 0 10px;
 	margin-top: 115px;
+	overflow: hidden;
+}
+
+.map_pic {
+	position: relative;
+	top:-130px;
+	left: -50px;
 }
 
 .user_form_title {
